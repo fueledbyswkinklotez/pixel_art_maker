@@ -5,10 +5,6 @@ const gridWidth = document.getElementById('inputWidth');
 //this variable represents the table where the grid will be drawn
 let tableCanvas = document.getElementById('pixelCanvas');
 
-function colorMe() {
-
-};
-
 function makeGrid() {
 	tableCanvas.innerHTML = '';//creates an empty table for tableCanvas (id = pixelCanvas)
 	let rowCount = gridHeight.value; //retrieves height value from user input and assigns to rowCount for # rows in table
@@ -27,7 +23,6 @@ function makeGrid() {
 		};
 	};
 };
-
 
 gridForm.addEventListener('submit', function myfunction () {
 	event.preventDefault();//prevents the form from submitting to server and refreshing the page
